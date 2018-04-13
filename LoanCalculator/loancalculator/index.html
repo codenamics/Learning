@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <style>
         .card {
             padding: 50px 0;
+            height: 490px;
         }
         
         .btn {
             width: 100%;
+        }
+        .prefix{
+            padding-right: 15px;
         }
     </style>
     <title>Loan calculator</title>
@@ -21,58 +27,70 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col s6 offset-s3">
-                <div class="card white">
-                    <div class="row">
-                        <form class="col s12" id="form">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input id="loan-amount" type="text" class="validate">
-                                        <label for="loan-amount">Loan Amount</label>
+                <div class="col m6 s12 ">
+                        <div class="card white">
+                            <div class="row">
+                                <form class="col s12" id="form">
+                                    <div class="container">
+                                            <h5>Loan calculator</h5>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                    <i class="far fa-money-bill-alt prefix"></i>
+                                                <input id="loan-amount" type="text" class="validate">
+                                                <label for="loan-amount">Loan Amount</label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                    <i class="fas fa-percent prefix"></i>
+                                                <input id="interest" type="text" class="validate">
+                                                <label for="interest">Interest</label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                    <i class="far fa-calendar-alt prefix"></i>
+                                                <input id="years" type="text" class="validate">
+                                                <label for="years">Years</label>
+                                            </div>
+                                        </div>
+                                        <a class="waves-effect waves-light btn teal" id="calculate">Calculate</a>
                                     </div>
-                                    <div class="input-field col s12">
-                                        <input id="interest" type="text" class="validate">
-                                        <label for="interest">Interest</label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <input id="years" type="text" class="validate">
-                                        <label for="years">Years</label>
-                                    </div>
-                                </div>
-                                <a class="waves-effect waves-light btn" id="calculate" type="submit">Calculate</a>
-                        </form>
-
+                                </form>
+                
+                            </div>
                         </div>
-                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col s6 offset-s3">
-                    <div class="card white">
-                        <div class="row">
-                            <form class="col s12">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input disabled id="monthly-payment" type="text" class="validate">
+                <div class="col m6 s12 ">
+                        <div class="card white">
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="container">
+                                    <h5>Result</h5>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                   
+                                                <input disabled="" id="monthly-payment" type="text" class="validate">
+                                                <span class="helper-text" data-error="wrong" data-success="right">Monthly Payment</span>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input disabled="" id="total-payment" type="text" class="validate">
+                                                <span class="helper-text" data-error="wrong" data-success="right">Total cost</span>
+                
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input disabled="" id="total-interest" type="text" class="validate">
+                                                <span class="helper-text" data-error="wrong" data-success="right">Total interest</span>
+                                            </div>
                                         </div>
-                                        <div class="input-field col s12">
-                                            <input disabled id="total-payment" type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12">
-                                            <input disabled id="total-interest" type="text" class="validate">
-                                        </div>
-                                    </div>
+                                </div>
                             </form>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
         <script src="app.js"></script>
 </body>
 
 </html>
+
+
