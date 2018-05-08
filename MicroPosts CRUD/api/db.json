@@ -1,34 +1,19 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Post 1",
-      "body": "This is post one"
+      "title": "Post ",
+      "body": "This is post ",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "Post 2",
-      "body": "This is post two"
+      "title": "Post Two",
+      "body": "This is post two\n",
+      "id": 2
     },
     {
-      "title": "post 1",
-      "body": "sd",
+      "title": "Post Three",
+      "body": "This is post three",
       "id": 3
-    },
-    {
-      "title": "sad",
-      "body": "asd",
-      "id": 4
-    },
-    {
-      "title": "",
-      "body": "",
-      "id": 5
-    },
-    {
-      "title": "",
-      "body": "",
-      "id": 6
     }
   ]
 }
