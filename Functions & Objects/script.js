@@ -111,8 +111,8 @@
 // }
 
 // john.presentation.call(emily, 'formal', 'morning')
-
-let Question = function(question, answers, correct){
+(function(){
+    let Question = function(question, answers, correct){
         this.question = question;
         this.answers = answers;
         this.correct = correct
@@ -146,3 +146,4 @@ questions[n].displayAnswer()
 let answer = parseInt(prompt('Please select answer'))
 
 questions[n].showAnswer(answer)
+})()
