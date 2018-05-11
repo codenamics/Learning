@@ -111,39 +111,43 @@
 // }
 
 // john.presentation.call(emily, 'formal', 'morning')
-(function(){
-    let Question = function(question, answers, correct){
-        this.question = question;
-        this.answers = answers;
-        this.correct = correct
-}
+// (function(){
+//     let Question = function(question, answers, correct){
+//         this.question = question;
+//         this.answers = answers;
+//         this.correct = correct
+// }
 
-Question.prototype.displayAnswer = function(){
-    console.log(this.question);
-    this.answers.forEach((answer, index) => {
-        console.log(`${index}: ${answer}`)
-    });
-}
+// Question.prototype.displayAnswer = function(){
+//     console.log(this.question);
+//     this.answers.forEach((answer, index) => {
+//         console.log(`${index}: ${answer}`)
+//     });
+// }
  
-Question.prototype.showAnswer = function(ans){
-    if(ans === this.correct){
-console.log('Correct answer')
-    }else{
-        console.log('Wrong answer')
-    }
-}
+// Question.prototype.showAnswer = function(ans){
+//     if(ans === this.correct){
+// console.log('Correct answer')
+//     }else{
+//         console.log('Wrong answer')
+//     }
+// }
 
-let q1 = new Question('Is JS the best language?', ['yes', 'no'], 0)
-let q2 = new Question('My name is?', ['Damian', 'Annie', 'Mark'], 0)
-let q3 = new Question('What is the color of the sky?', ['red','blue'], 1)
+// let q1 = new Question('Is JS the best language?', ['yes', 'no'], 0)
+// let q2 = new Question('My name is?', ['Damian', 'Annie', 'Mark'], 0)
+// let q3 = new Question('What is the color of the sky?', ['red','blue'], 1)
 
-let questions = [q1,q2,q3]
+// let questions = [q1,q2,q3]
 
- let n = Math.round(Math.random() * questions.length);
+//  let n = Math.round(Math.random() * questions.length);
 
-questions[n].displayAnswer()
+// questions[n].displayAnswer()
 
-let answer = parseInt(prompt('Please select answer'))
+// let answer = parseInt(prompt('Please select answer'))
 
-questions[n].showAnswer(answer)
-})()
+// questions[n].showAnswer(answer)
+// })()
+
+
+  
+  
